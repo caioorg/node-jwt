@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
 const User = require('../models/user')
-const secretConfig = require('../config/auth.json')
+const secretConfig = require('../../config/auth.json')
 const router = express.Router()
 
 const generateToken = params => {
